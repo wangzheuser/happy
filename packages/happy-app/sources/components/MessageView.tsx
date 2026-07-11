@@ -102,9 +102,9 @@ function UserTextBlock(props: {
   const userMessageBubbleColor = useSetting('userMessageBubbleColor');
   const { theme } = useUnistyles();
   const bubblePalette = resolveUserMessageBubbleColor(userMessageBubbleColor, theme.dark);
+  // No border — matches the pre-picker bubble; color presets only tint the background
   const bubbleStyle = {
     backgroundColor: bubblePalette.background,
-    borderColor: bubblePalette.border,
   };
   const handleLongPress = React.useCallback(() => {
     if (props.onForkFromUserMessage) {
@@ -292,12 +292,10 @@ const styles = StyleSheet.create((theme) => ({
   },
   userMessageBubble: {
     backgroundColor: theme.colors.userMessageBackground,
-    borderColor: theme.colors.divider,
-    borderWidth: 1,
     paddingHorizontal: 12,
-    paddingVertical: 8,
-    borderRadius: 16,
-    marginBottom: 16,
+    paddingVertical: 4,
+    borderRadius: 12,
+    marginBottom: 12,
     maxWidth: '100%',
   },
   goalMessageBubble: {

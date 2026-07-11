@@ -1,4 +1,4 @@
-export const USER_MESSAGE_BUBBLE_COLORS = ['blue', 'green', 'purple', 'rose', 'sand', 'gray'] as const;
+export const USER_MESSAGE_BUBBLE_COLORS = ['gray', 'blue', 'green', 'purple', 'rose', 'sand'] as const;
 
 export type UserMessageBubbleColor = typeof USER_MESSAGE_BUBBLE_COLORS[number];
 
@@ -37,9 +37,10 @@ const lightPalettes: Record<UserMessageBubbleColor, UserMessageBubblePalette> = 
         border: '#D9C292',
         indicator: '#B28B3D',
     },
+    // Exactly the pre-picker bubble: theme.colors.userMessageBackground (light)
     gray: {
-        background: '#F0F2F5',
-        border: '#CCD2DA',
+        background: '#f0eee6',
+        border: '#f0eee6',
         indicator: '#8E8E93',
     },
 };
@@ -70,9 +71,10 @@ const darkPalettes: Record<UserMessageBubbleColor, UserMessageBubblePalette> = {
         border: '#8D7A55',
         indicator: '#E8C878',
     },
+    // Exactly the pre-picker bubble: theme.colors.userMessageBackground (dark)
     gray: {
         background: '#2C2C2E',
-        border: '#505054',
+        border: '#2C2C2E',
         indicator: '#8E8E93',
     },
 };
