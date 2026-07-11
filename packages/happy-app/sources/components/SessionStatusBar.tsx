@@ -270,7 +270,9 @@ const stylesheet = StyleSheet.create((theme) => ({
         alignItems: 'center',
         justifyContent: 'space-between',
         gap: 6,
-        paddingHorizontal: 8,
+        // 16 matches AgentInput statusContainer so the branch/model chips
+        // align with the online / permission-mode row above the composer
+        paddingHorizontal: 16,
         paddingTop: 4,
         paddingBottom: 2,
         flexWrap: 'nowrap',

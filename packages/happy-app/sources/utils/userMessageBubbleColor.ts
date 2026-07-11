@@ -8,7 +8,8 @@ export type UserMessageBubblePalette = {
     indicator: string;
 };
 
-export const DEFAULT_USER_MESSAGE_BUBBLE_COLOR: UserMessageBubbleColor = 'blue';
+// gray matches the pre-picker bubble (theme userMessageBackground #2C2C2E dark)
+export const DEFAULT_USER_MESSAGE_BUBBLE_COLOR: UserMessageBubbleColor = 'gray';
 
 const lightPalettes: Record<UserMessageBubbleColor, UserMessageBubblePalette> = {
     blue: {

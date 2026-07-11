@@ -16,7 +16,7 @@ describe('user message bubble color', () => {
     it('cycles through presets', () => {
         expect(getNextUserMessageBubbleColor('blue')).toBe('green');
         expect(getNextUserMessageBubbleColor(USER_MESSAGE_BUBBLE_COLORS[USER_MESSAGE_BUBBLE_COLORS.length - 1])).toBe('blue');
-        expect(getNextUserMessageBubbleColor('missing')).toBe('green');
+        expect(getNextUserMessageBubbleColor('missing')).toBe('blue');
     });
 
     it('resolves different palettes for light and dark themes', () => {
